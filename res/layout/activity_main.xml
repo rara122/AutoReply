@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity" >
+    
+    <ImageView
+        android:id="@+id/startImage"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_centerInParent="true"
+       	android:src="@drawable/drive_button"
+       	android:contentDescription="startBtn"
+		android:onClick="StartReply" />
+    <ImageView
+        android:id="@+id/stopImage"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_centerInParent="true"
+       	android:src="@drawable/park_button"
+       	android:contentDescription="stopBtn"
+		android:onClick="StopReply" />
+    
+    <ImageView
+        android:id="@+id/logo"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_centerHorizontal="true"
+       	android:layout_marginBottom="60dp"
+       	android:layout_above="@+id/startImage"
+       	android:src="@drawable/autoreply_logo"
+       	android:contentDescription="logo" />
+    
+    <TextView
+        android:id="@+id/responseMsgDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:textColor="#5555BF"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/startImage" />
+    
+    <EditText
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startImage"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text=""
+        android:inputType="textMultiLine" />
+        <requestFocus />
+        
+        <ImageView
+        android:id="@+id/editImage"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_centerHorizontal="true"
+       	android:layout_below="@+id/txt"
+       	android:src="@drawable/edit_button"
+       	android:contentDescription="editBtn"
+		android:onClick="EditResponse" />
+        <ImageView
+        android:id="@+id/dividerImage"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_centerHorizontal="true"
+       	android:layout_below="@+id/txt"
+       	android:src="@drawable/divider_image"
+       	android:contentDescription="divider" />
+        <ImageView
+        android:id="@+id/saveImage"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_below="@+id/txt"
+       	android:layout_toLeftOf="@id/dividerImage"
+       	android:src="@drawable/save_button"
+       	android:contentDescription="saveBtn"
+       	android:onClick="SaveResponse" />
+        <ImageView
+        android:id="@+id/cancelImage"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_below="@+id/txt"
+       	android:layout_toRightOf="@id/dividerImage"
+       	android:src="@drawable/cancel_button"
+       	android:contentDescription="cancelBtn"
+       	android:onClick="CancelEdit" />
+
+        <Button
+            android:id="@+id/logButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dividerImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="View Log"
+            android:onClick="logClick" />
+    
+</RelativeLayout>
