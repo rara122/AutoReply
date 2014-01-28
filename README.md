@@ -7,4 +7,5 @@ Ignored phonecalls use the Itelephony library for receiving phonecalls and sendi
 Texts are left unread and are replied to a default message that is saved onto the phone's Shared Library.
 
 Authors: **Alejandro Chew, Je Hong Yoo, Filmore Joe McMillan, Nicklaus Cormier**
+
 Developed: Summer of 2013
